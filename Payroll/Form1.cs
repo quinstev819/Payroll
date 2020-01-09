@@ -21,7 +21,6 @@ namespace Payroll
     {
         List<string> firstNames = new List<string>();
         List<string> lastNames = new List<string>();
-        int i = 0;
 
         public Form1()
         {
@@ -30,14 +29,16 @@ namespace Payroll
 
         private void createUserButton_Click(object sender, EventArgs e)
         {
-            firstNames.Add(fullNameTextBox.Text);
-            i++;
+            firstNames.Add(firstNameText.Text);
+            lastNames.Add(firstNameText.Text);
         }
-
+  
         private void refreshButton_Click(object sender, EventArgs e)
         {
             if (firstNames.Contains(employeeNameTextBox.Text))
             {
+                int index = firstNames.FindIndex(x => x == employeeNameTextBox.Text);
+                outputText.Text += firstNames[index] + " " + lastNames[index];
 
             }
         }
