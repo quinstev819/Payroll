@@ -7,14 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 /// <summary>
 /// Payroll Code
 /// Mr. Theodoropoulos
 /// Quinlan Stevenson & Ben Praseuth
 /// ICS 3U
 /// </summary>
-
 namespace Payroll
 {
     public partial class Form1 : Form
@@ -87,7 +85,7 @@ namespace Payroll
                 }
                 else
                 {
-                    position.Add(phoneText.Text);
+                    position.Add(positionText.Text);
                 }
                 hourlyPay.Add(hourlyPayText.Text);
                 totalHours.Add(totalHoursText.Text);
@@ -216,7 +214,7 @@ namespace Payroll
                     }
                     else
                     {
-                        position[index] = phoneTextEdit.Text;
+                        position[index] = positionTextEdit.Text;
                     }
                     hourlyPay[index] = hourlyPayTextEdit.Text;
                     totalHours[index] = totalHoursTextEdit.Text;
@@ -230,7 +228,6 @@ namespace Payroll
                     hourlyPayTextEdit.Text = "";
                     totalHoursTextEdit.Text = "";
                 }
-                
             }
         }
     }
