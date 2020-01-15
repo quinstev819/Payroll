@@ -30,6 +30,8 @@
         {
             this.createTabControl = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.totalHoursLabel = new System.Windows.Forms.Label();
+            this.totalHoursText = new System.Windows.Forms.TextBox();
             this.hourlyPayLabel = new System.Windows.Forms.Label();
             this.hourlyPayText = new System.Windows.Forms.TextBox();
             this.positionLabel = new System.Windows.Forms.Label();
@@ -46,22 +48,44 @@
             this.addressText = new System.Windows.Forms.TextBox();
             this.firstNameText = new System.Windows.Forms.TextBox();
             this.payrollLabel = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.outputText = new System.Windows.Forms.Label();
             this.employeeNameTextBox = new System.Windows.Forms.TextBox();
             this.refreshButton = new System.Windows.Forms.Button();
             this.fullNameLabelList = new System.Windows.Forms.Label();
             this.payrollLabelList = new System.Windows.Forms.Label();
-            this.totalHoursLabel = new System.Windows.Forms.Label();
-            this.totalHoursText = new System.Windows.Forms.TextBox();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.totalHoursLabelEdit = new System.Windows.Forms.Label();
+            this.totalHoursTextEdit = new System.Windows.Forms.TextBox();
+            this.hourlyPayLabelEdit = new System.Windows.Forms.Label();
+            this.hourlyPayTextEdit = new System.Windows.Forms.TextBox();
+            this.positionLabelEdit = new System.Windows.Forms.Label();
+            this.positionTextEdit = new System.Windows.Forms.TextBox();
+            this.phoneLabelEdit = new System.Windows.Forms.Label();
+            this.lastNameLabelEdit = new System.Windows.Forms.Label();
+            this.phoneTextEdit = new System.Windows.Forms.TextBox();
+            this.lastNameTextEdit = new System.Windows.Forms.TextBox();
+            this.emailLabelEdit = new System.Windows.Forms.Label();
+            this.emailTextEdit = new System.Windows.Forms.TextBox();
+            this.firstNameLabelEdit = new System.Windows.Forms.Label();
+            this.addressLabelEdit = new System.Windows.Forms.Label();
+            this.addressTextEdit = new System.Windows.Forms.TextBox();
+            this.firstNameTextEdit = new System.Windows.Forms.TextBox();
+            this.employeeTextBoxEdit = new System.Windows.Forms.TextBox();
+            this.refreshButtonEdit = new System.Windows.Forms.Button();
+            this.fullNameLabelEdit = new System.Windows.Forms.Label();
+            this.payRollLabelEdit = new System.Windows.Forms.Label();
+            this.saveButtonEdit = new System.Windows.Forms.Button();
             this.createTabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // createTabControl
             // 
             this.createTabControl.Controls.Add(this.tabPage1);
+            this.createTabControl.Controls.Add(this.tabPage3);
             this.createTabControl.Controls.Add(this.tabPage2);
             this.createTabControl.Location = new System.Drawing.Point(2, 2);
             this.createTabControl.Margin = new System.Windows.Forms.Padding(4);
@@ -70,8 +94,6 @@
             this.createTabControl.Size = new System.Drawing.Size(1150, 665);
             this.createTabControl.TabIndex = 10;
             this.createTabControl.Tag = "create";
-            this.createTabControl.KeyDown += new System.Windows.Forms.KeyEventHandler(this.createTabControl_KeyDown);
-            this.createTabControl.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.createTabControl_KeyPress);
             // 
             // tabPage1
             // 
@@ -101,6 +123,25 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Create New User";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // totalHoursLabel
+            // 
+            this.totalHoursLabel.AutoSize = true;
+            this.totalHoursLabel.Location = new System.Drawing.Point(6, 435);
+            this.totalHoursLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.totalHoursLabel.Name = "totalHoursLabel";
+            this.totalHoursLabel.Size = new System.Drawing.Size(126, 25);
+            this.totalHoursLabel.TabIndex = 0;
+            this.totalHoursLabel.Text = "Total hours:";
+            // 
+            // totalHoursText
+            // 
+            this.totalHoursText.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.totalHoursText.Location = new System.Drawing.Point(134, 431);
+            this.totalHoursText.Margin = new System.Windows.Forms.Padding(4);
+            this.totalHoursText.Name = "totalHoursText";
+            this.totalHoursText.Size = new System.Drawing.Size(240, 31);
+            this.totalHoursText.TabIndex = 8;
             // 
             // hourlyPayLabel
             // 
@@ -255,21 +296,21 @@
             this.payrollLabel.TabIndex = 0;
             this.payrollLabel.Text = "Payroll";
             // 
-            // tabPage2
+            // tabPage3
             // 
-            this.tabPage2.Controls.Add(this.outputText);
-            this.tabPage2.Controls.Add(this.employeeNameTextBox);
-            this.tabPage2.Controls.Add(this.refreshButton);
-            this.tabPage2.Controls.Add(this.fullNameLabelList);
-            this.tabPage2.Controls.Add(this.payrollLabelList);
-            this.tabPage2.Location = new System.Drawing.Point(8, 39);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage2.Size = new System.Drawing.Size(1134, 618);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "List";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPage3.Controls.Add(this.outputText);
+            this.tabPage3.Controls.Add(this.employeeNameTextBox);
+            this.tabPage3.Controls.Add(this.refreshButton);
+            this.tabPage3.Controls.Add(this.fullNameLabelList);
+            this.tabPage3.Controls.Add(this.payrollLabelList);
+            this.tabPage3.Location = new System.Drawing.Point(8, 39);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPage3.Size = new System.Drawing.Size(1134, 618);
+            this.tabPage3.TabIndex = 1;
+            this.tabPage3.Text = "List";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // outputText
             // 
@@ -320,24 +361,236 @@
             this.payrollLabelList.TabIndex = 0;
             this.payrollLabelList.Text = "Payroll";
             // 
-            // totalHoursLabel
+            // tabPage2
             // 
-            this.totalHoursLabel.AutoSize = true;
-            this.totalHoursLabel.Location = new System.Drawing.Point(6, 435);
-            this.totalHoursLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.totalHoursLabel.Name = "totalHoursLabel";
-            this.totalHoursLabel.Size = new System.Drawing.Size(126, 25);
-            this.totalHoursLabel.TabIndex = 0;
-            this.totalHoursLabel.Text = "Total hours:";
+            this.tabPage2.Controls.Add(this.saveButtonEdit);
+            this.tabPage2.Controls.Add(this.totalHoursLabelEdit);
+            this.tabPage2.Controls.Add(this.totalHoursTextEdit);
+            this.tabPage2.Controls.Add(this.hourlyPayLabelEdit);
+            this.tabPage2.Controls.Add(this.hourlyPayTextEdit);
+            this.tabPage2.Controls.Add(this.positionLabelEdit);
+            this.tabPage2.Controls.Add(this.positionTextEdit);
+            this.tabPage2.Controls.Add(this.phoneLabelEdit);
+            this.tabPage2.Controls.Add(this.lastNameLabelEdit);
+            this.tabPage2.Controls.Add(this.phoneTextEdit);
+            this.tabPage2.Controls.Add(this.lastNameTextEdit);
+            this.tabPage2.Controls.Add(this.emailLabelEdit);
+            this.tabPage2.Controls.Add(this.emailTextEdit);
+            this.tabPage2.Controls.Add(this.firstNameLabelEdit);
+            this.tabPage2.Controls.Add(this.addressLabelEdit);
+            this.tabPage2.Controls.Add(this.addressTextEdit);
+            this.tabPage2.Controls.Add(this.firstNameTextEdit);
+            this.tabPage2.Controls.Add(this.employeeTextBoxEdit);
+            this.tabPage2.Controls.Add(this.refreshButtonEdit);
+            this.tabPage2.Controls.Add(this.fullNameLabelEdit);
+            this.tabPage2.Controls.Add(this.payRollLabelEdit);
+            this.tabPage2.Location = new System.Drawing.Point(8, 39);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1134, 618);
+            this.tabPage2.TabIndex = 2;
+            this.tabPage2.Text = "Edit User";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // totalHoursText
+            // totalHoursLabelEdit
             // 
-            this.totalHoursText.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.totalHoursText.Location = new System.Drawing.Point(134, 431);
-            this.totalHoursText.Margin = new System.Windows.Forms.Padding(4);
-            this.totalHoursText.Name = "totalHoursText";
-            this.totalHoursText.Size = new System.Drawing.Size(240, 31);
-            this.totalHoursText.TabIndex = 8;
+            this.totalHoursLabelEdit.AutoSize = true;
+            this.totalHoursLabelEdit.Location = new System.Drawing.Point(8, 478);
+            this.totalHoursLabelEdit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.totalHoursLabelEdit.Name = "totalHoursLabelEdit";
+            this.totalHoursLabelEdit.Size = new System.Drawing.Size(126, 25);
+            this.totalHoursLabelEdit.TabIndex = 9;
+            this.totalHoursLabelEdit.Text = "Total hours:";
+            // 
+            // totalHoursTextEdit
+            // 
+            this.totalHoursTextEdit.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.totalHoursTextEdit.Location = new System.Drawing.Point(136, 474);
+            this.totalHoursTextEdit.Margin = new System.Windows.Forms.Padding(4);
+            this.totalHoursTextEdit.Name = "totalHoursTextEdit";
+            this.totalHoursTextEdit.Size = new System.Drawing.Size(240, 31);
+            this.totalHoursTextEdit.TabIndex = 24;
+            // 
+            // hourlyPayLabelEdit
+            // 
+            this.hourlyPayLabelEdit.AutoSize = true;
+            this.hourlyPayLabelEdit.Location = new System.Drawing.Point(8, 430);
+            this.hourlyPayLabelEdit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.hourlyPayLabelEdit.Name = "hourlyPayLabelEdit";
+            this.hourlyPayLabelEdit.Size = new System.Drawing.Size(123, 25);
+            this.hourlyPayLabelEdit.TabIndex = 10;
+            this.hourlyPayLabelEdit.Text = "Hourly Pay:";
+            // 
+            // hourlyPayTextEdit
+            // 
+            this.hourlyPayTextEdit.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.hourlyPayTextEdit.Location = new System.Drawing.Point(136, 426);
+            this.hourlyPayTextEdit.Margin = new System.Windows.Forms.Padding(4);
+            this.hourlyPayTextEdit.Name = "hourlyPayTextEdit";
+            this.hourlyPayTextEdit.Size = new System.Drawing.Size(240, 31);
+            this.hourlyPayTextEdit.TabIndex = 23;
+            // 
+            // positionLabelEdit
+            // 
+            this.positionLabelEdit.AutoSize = true;
+            this.positionLabelEdit.Location = new System.Drawing.Point(10, 380);
+            this.positionLabelEdit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.positionLabelEdit.Name = "positionLabelEdit";
+            this.positionLabelEdit.Size = new System.Drawing.Size(95, 25);
+            this.positionLabelEdit.TabIndex = 11;
+            this.positionLabelEdit.Text = "Position:";
+            // 
+            // positionTextEdit
+            // 
+            this.positionTextEdit.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.positionTextEdit.Location = new System.Drawing.Point(136, 377);
+            this.positionTextEdit.Margin = new System.Windows.Forms.Padding(4);
+            this.positionTextEdit.Name = "positionTextEdit";
+            this.positionTextEdit.Size = new System.Drawing.Size(240, 31);
+            this.positionTextEdit.TabIndex = 22;
+            // 
+            // phoneLabelEdit
+            // 
+            this.phoneLabelEdit.AutoSize = true;
+            this.phoneLabelEdit.Location = new System.Drawing.Point(10, 332);
+            this.phoneLabelEdit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.phoneLabelEdit.Name = "phoneLabelEdit";
+            this.phoneLabelEdit.Size = new System.Drawing.Size(80, 25);
+            this.phoneLabelEdit.TabIndex = 12;
+            this.phoneLabelEdit.Text = "Phone:";
+            // 
+            // lastNameLabelEdit
+            // 
+            this.lastNameLabelEdit.AutoSize = true;
+            this.lastNameLabelEdit.Location = new System.Drawing.Point(8, 197);
+            this.lastNameLabelEdit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lastNameLabelEdit.Name = "lastNameLabelEdit";
+            this.lastNameLabelEdit.Size = new System.Drawing.Size(121, 25);
+            this.lastNameLabelEdit.TabIndex = 13;
+            this.lastNameLabelEdit.Text = "Last Name:";
+            // 
+            // phoneTextEdit
+            // 
+            this.phoneTextEdit.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.phoneTextEdit.Location = new System.Drawing.Point(136, 329);
+            this.phoneTextEdit.Margin = new System.Windows.Forms.Padding(4);
+            this.phoneTextEdit.Name = "phoneTextEdit";
+            this.phoneTextEdit.Size = new System.Drawing.Size(240, 31);
+            this.phoneTextEdit.TabIndex = 21;
+            // 
+            // lastNameTextEdit
+            // 
+            this.lastNameTextEdit.Location = new System.Drawing.Point(136, 193);
+            this.lastNameTextEdit.Margin = new System.Windows.Forms.Padding(4);
+            this.lastNameTextEdit.Name = "lastNameTextEdit";
+            this.lastNameTextEdit.Size = new System.Drawing.Size(240, 31);
+            this.lastNameTextEdit.TabIndex = 18;
+            // 
+            // emailLabelEdit
+            // 
+            this.emailLabelEdit.AutoSize = true;
+            this.emailLabelEdit.Location = new System.Drawing.Point(8, 288);
+            this.emailLabelEdit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.emailLabelEdit.Name = "emailLabelEdit";
+            this.emailLabelEdit.Size = new System.Drawing.Size(71, 25);
+            this.emailLabelEdit.TabIndex = 14;
+            this.emailLabelEdit.Text = "Email:";
+            // 
+            // emailTextEdit
+            // 
+            this.emailTextEdit.Location = new System.Drawing.Point(136, 284);
+            this.emailTextEdit.Margin = new System.Windows.Forms.Padding(4);
+            this.emailTextEdit.Name = "emailTextEdit";
+            this.emailTextEdit.Size = new System.Drawing.Size(240, 31);
+            this.emailTextEdit.TabIndex = 20;
+            // 
+            // firstNameLabelEdit
+            // 
+            this.firstNameLabelEdit.AutoSize = true;
+            this.firstNameLabelEdit.Location = new System.Drawing.Point(8, 151);
+            this.firstNameLabelEdit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.firstNameLabelEdit.Name = "firstNameLabelEdit";
+            this.firstNameLabelEdit.Size = new System.Drawing.Size(122, 25);
+            this.firstNameLabelEdit.TabIndex = 15;
+            this.firstNameLabelEdit.Text = "First Name:";
+            // 
+            // addressLabelEdit
+            // 
+            this.addressLabelEdit.AutoSize = true;
+            this.addressLabelEdit.Location = new System.Drawing.Point(8, 242);
+            this.addressLabelEdit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.addressLabelEdit.Name = "addressLabelEdit";
+            this.addressLabelEdit.Size = new System.Drawing.Size(97, 25);
+            this.addressLabelEdit.TabIndex = 16;
+            this.addressLabelEdit.Text = "Address:";
+            // 
+            // addressTextEdit
+            // 
+            this.addressTextEdit.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.addressTextEdit.Location = new System.Drawing.Point(136, 238);
+            this.addressTextEdit.Margin = new System.Windows.Forms.Padding(4);
+            this.addressTextEdit.Name = "addressTextEdit";
+            this.addressTextEdit.Size = new System.Drawing.Size(240, 31);
+            this.addressTextEdit.TabIndex = 19;
+            // 
+            // firstNameTextEdit
+            // 
+            this.firstNameTextEdit.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.firstNameTextEdit.Location = new System.Drawing.Point(136, 147);
+            this.firstNameTextEdit.Margin = new System.Windows.Forms.Padding(4);
+            this.firstNameTextEdit.Name = "firstNameTextEdit";
+            this.firstNameTextEdit.Size = new System.Drawing.Size(240, 31);
+            this.firstNameTextEdit.TabIndex = 17;
+            // 
+            // employeeTextBoxEdit
+            // 
+            this.employeeTextBoxEdit.Location = new System.Drawing.Point(545, 106);
+            this.employeeTextBoxEdit.Margin = new System.Windows.Forms.Padding(6);
+            this.employeeTextBoxEdit.Name = "employeeTextBoxEdit";
+            this.employeeTextBoxEdit.Size = new System.Drawing.Size(374, 31);
+            this.employeeTextBoxEdit.TabIndex = 5;
+            // 
+            // refreshButtonEdit
+            // 
+            this.refreshButtonEdit.Location = new System.Drawing.Point(1020, 572);
+            this.refreshButtonEdit.Margin = new System.Windows.Forms.Padding(4);
+            this.refreshButtonEdit.Name = "refreshButtonEdit";
+            this.refreshButtonEdit.Size = new System.Drawing.Size(108, 40);
+            this.refreshButtonEdit.TabIndex = 6;
+            this.refreshButtonEdit.Text = "Refresh";
+            this.refreshButtonEdit.UseVisualStyleBackColor = true;
+            this.refreshButtonEdit.Click += new System.EventHandler(this.refreshButtonEdit_Click);
+            // 
+            // fullNameLabelEdit
+            // 
+            this.fullNameLabelEdit.AutoSize = true;
+            this.fullNameLabelEdit.Location = new System.Drawing.Point(6, 109);
+            this.fullNameLabelEdit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.fullNameLabelEdit.Name = "fullNameLabelEdit";
+            this.fullNameLabelEdit.Size = new System.Drawing.Size(529, 25);
+            this.fullNameLabelEdit.TabIndex = 4;
+            this.fullNameLabelEdit.Text = "Please enter employee\'s first name, then click refresh:";
+            // 
+            // payRollLabelEdit
+            // 
+            this.payRollLabelEdit.AutoSize = true;
+            this.payRollLabelEdit.Font = new System.Drawing.Font("Comic Sans MS", 27F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.payRollLabelEdit.Location = new System.Drawing.Point(432, 4);
+            this.payRollLabelEdit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.payRollLabelEdit.Name = "payRollLabelEdit";
+            this.payRollLabelEdit.Size = new System.Drawing.Size(266, 101);
+            this.payRollLabelEdit.TabIndex = 1;
+            this.payRollLabelEdit.Text = "Payroll";
+            // 
+            // saveButtonEdit
+            // 
+            this.saveButtonEdit.Location = new System.Drawing.Point(883, 572);
+            this.saveButtonEdit.Name = "saveButtonEdit";
+            this.saveButtonEdit.Size = new System.Drawing.Size(113, 40);
+            this.saveButtonEdit.TabIndex = 25;
+            this.saveButtonEdit.Text = "Save";
+            this.saveButtonEdit.UseVisualStyleBackColor = true;
+            this.saveButtonEdit.Click += new System.EventHandler(this.saveButtonEdit_Click);
             // 
             // Form1
             // 
@@ -351,6 +604,8 @@
             this.createTabControl.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.ResumeLayout(false);
@@ -361,7 +616,7 @@
 
         private System.Windows.Forms.TabControl createTabControl;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Label payrollLabel;
         private System.Windows.Forms.Label firstNameLabel;
         private System.Windows.Forms.TextBox firstNameText;
@@ -385,6 +640,28 @@
         private System.Windows.Forms.TextBox hourlyPayText;
         private System.Windows.Forms.Label totalHoursLabel;
         private System.Windows.Forms.TextBox totalHoursText;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.Label payRollLabelEdit;
+        private System.Windows.Forms.TextBox employeeTextBoxEdit;
+        private System.Windows.Forms.Button refreshButtonEdit;
+        private System.Windows.Forms.Label fullNameLabelEdit;
+        private System.Windows.Forms.Label totalHoursLabelEdit;
+        private System.Windows.Forms.TextBox totalHoursTextEdit;
+        private System.Windows.Forms.Label hourlyPayLabelEdit;
+        private System.Windows.Forms.Label positionLabelEdit;
+        private System.Windows.Forms.TextBox positionTextEdit;
+        private System.Windows.Forms.Label phoneLabelEdit;
+        private System.Windows.Forms.Label lastNameLabelEdit;
+        private System.Windows.Forms.TextBox phoneTextEdit;
+        private System.Windows.Forms.TextBox lastNameTextEdit;
+        private System.Windows.Forms.Label emailLabelEdit;
+        private System.Windows.Forms.TextBox emailTextEdit;
+        private System.Windows.Forms.Label firstNameLabelEdit;
+        private System.Windows.Forms.Label addressLabelEdit;
+        private System.Windows.Forms.TextBox addressTextEdit;
+        private System.Windows.Forms.TextBox firstNameTextEdit;
+        private System.Windows.Forms.TextBox hourlyPayTextEdit;
+        private System.Windows.Forms.Button saveButtonEdit;
     }
 }
 
