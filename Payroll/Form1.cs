@@ -141,7 +141,6 @@ namespace Payroll
                     + netPay.ToString("C");
             }
         }
-
         private void refreshButtonEdit_Click(object sender, EventArgs e)
         {
             if (firstNames.Contains(employeeTextBoxEdit.Text))
@@ -157,7 +156,6 @@ namespace Payroll
                 totalHoursTextEdit.Text = Convert.ToString(totalHours[index]);
             }
         }
-
         private void saveButtonEdit_Click(object sender, EventArgs e)
         {
             if (firstNames.Contains(employeeTextBoxEdit.Text))
